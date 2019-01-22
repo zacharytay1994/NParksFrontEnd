@@ -1,0 +1,71 @@
+﻿header {
+    background-image: url(../images/kentridge.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title1 {
+    width: 40%;
+    display: inline-block;
+}
+
+.title2 {
+    width:40%;
+    display: inline-block;
+    margin-left:5%;
+}
+
+h1 {
+    font-family: Georgia;
+    color: gold;
+    font-weight: bold;
+    border-color: darkgoldenrod;
+    padding: 10px;
+    border-width: 3px;
+    border-left: solid;
+    padding-left: 1%;
+}
+
+h2 {
+    font-family: Georgia;
+    color: lightgreen;
+    font-weight: bold;
+    border-color: darkgoldenrod;
+    padding: 10px;
+    border-width: 3px;
+    border-left: solid;
+    padding-left: 1%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightgray;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+}
+
+    li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        li a:hover {
+            background-color: lightgreen;
+        }
+
+.active {
+    background-color: #4CAF50;
+}
