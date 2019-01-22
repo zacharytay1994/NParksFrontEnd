@@ -9,12 +9,14 @@
 .title1 {
     width: 40%;
     display: inline-block;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .title2 {
-    width:40%;
+    width: 40%;
     display: inline-block;
-    margin-left:5%;
+    margin-left: 5%;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 h1 {
@@ -44,10 +46,14 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: lightgray;
+    background-color: #2c3b59;
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+    border:solid;
+    border-color:black;
+    border-width:3px;
 }
 
 li {
