@@ -1,0 +1,95 @@
+﻿body {
+    background-color: black;
+}
+
+.flexcontainer {
+    display: flex;
+    justify-content: center;
+    background-color: #1e2600;
+    background-image: url("https://www.transparenttextures.com/patterns/xv.png");
+    border: solid;
+    border-width: 3px;
+    border-color: black;
+}
+
+.boxone {
+    margin: 20px;
+    width: 45%;
+    text-align: center;
+}
+
+section {
+    border-top: solid;
+    border-color: black;
+    border-width: 3px;
+}
+
+p {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.imgc {
+    width: 100%;
+    border: inset;
+    border-color: darkmagenta;
+    border-width: 10px;
+}
+
+.sectionbody {
+    background-color: #1e2600;
+    background-image: url("https://www.transparenttextures.com/patterns/xv.png");
+    border: solid;
+    border-width: 3px;
+    border-color: black;
+}
+
+.titles {
+    margin-left: 10px;
+    border-left-width: 10px;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+}
+
+.gif {
+    height: 100px;
+    width: 100%;
+    border-top: solid;
+    border-bottom: solid;
+    border-color: gold;
+}
+
+table {
+    border: solid;
+    border-color: gray;
+    border-width: 3px;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+th {
+    border: solid;
+    border-color: lightgray;
+    border-width: 3px;
+    width: 50%;
+}
+
+td {
+    border: solid;
+    border-color: lightgray;
+    border-width: 3px;
+}
+
+.phrase {
+    color: white;
+    font-size: 200%;
+    font-family: 'Freestyle Script';
+}
+
+.capimg {
+    padding-top: 10px;
+    text-shadow: -1px -1px 0 darkgray, 1px -1px 0 darkgray, -1px 1px 0 darkgray, 1px 1px 0 darkgray;
+    color: floralwhite;
+}
