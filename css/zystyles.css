@@ -93,3 +93,23 @@ td {
     text-shadow: -1px -1px 0 darkgray, 1px -1px 0 darkgray, -1px 1px 0 darkgray, 1px 1px 0 darkgray;
     color: floralwhite;
 }
+
+img.mySlides{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.parkname{
+    text-align:center;
+    color:green;
+}
+
+p.description{
+    text-align:left;
+    color:white;
+}
+
+img.dairyfarm{
+    margin-left:auto;
+    margin-right:auto;
+}
