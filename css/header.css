@@ -52,13 +52,16 @@ ul {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
-    border:solid;
-    border-color:black;
-    border-width:3px;
+    border: solid;
+    border-color: black;
+    border-width: 3px;
+    text-align: center;
+    list-style-type: none;
 }
 
 li {
-    float: left;
+    /*float: left;*/
+    display: inline-block;
 }
 
     li a {
@@ -70,16 +73,20 @@ li {
     }
 
         li a:hover {
-            background-color: lightgreen;
+            background-color: rgba(195, 255, 170, 0.7);
         }
 
 .active {
-    background-color: #4CAF50;
+    /*background-color: #4CAF50;*/
+    color: white;
+    padding: 10px;
+    text-decoration-line: underline;
 }
 
 .nonactive {
     color:white;
-    border-left:solid;
-    border-color:darkgray;
-    padding-left: 10px;
+    /*border-left:solid;*/
+    /*border-color:darkgray;*/
+    padding: 10px;
+    text-decoration-line:underline;
 }
