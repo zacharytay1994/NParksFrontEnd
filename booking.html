@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta content="Pon Zheng Yang" name="author" />
+    <meta content="Booking" name="description" />
+    <link href="https://fonts.googleapis.com/css?family=Stint+Ultra+Expanded" rel="stylesheet">
+    <link rel="stylesheet" href="css/zystyles.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Book a tour!</title>
+</head>
+<body>
+    <header>
+        <div w3-include-html="header.html"></div>
+    </header>
+
+    <div class="sectionbody">
+        <section>
+            <h2>Book a tour with us!</h2>
+            <div class="sectionbody">
+                <form id="bookingForm" class="booking">
+                    <label class="align_label">Choose a tour: </label>
+                    <input type="radio" class="radio" value="Sungei Buloh" />
+                    <input type="radio" class="radio" value="Dairy Farm" />
+                </form>
+            </div>
+        </section>
+    </div>
+    <script>
+        w3.includeHTML();
+    </script>
+</body>
+</html>

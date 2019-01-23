@@ -12,11 +12,46 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <title>Contact us</title>
+    <script src="js/contactScript.js"></script>
+    <title>Contact us!</title>
 </head>
 <body>
+    <header>
+        <div w3-include-html="header.html"></div>
+    </header>
     <div>
-        
+        <section class="sectionbody">
+            <h1 class="w3-center">Contact us!</h1>
+            <p class="w3-center">
+                Hello, we would would like to hear more from you about our parks!
+                Please give us lots of feedback so we can make our parks better!
+                Please leave us your name and contact details so we can get back
+                to you with updates!
+            </p>
+
+            <div class="w3-center">
+                <form id ="contactForm" class="contact">
+                    <label class="align_label">Name: </label>
+                    <input id="name" type="text" placeholder="Enter your name" /> 
+                    <br />
+                    <br />
+                    <label class="align_label">Mobile no.: </label>
+                    <input id="phoneNo"type="tel" placeholder="Enter your phone number" />
+                    <br />
+                    <br />
+                    <label class="align_label">Email address: </label>
+                    <input id="emailAddr" type="email" placeholder="Enter your phone number" />
+                    <br />
+                    <br />
+                    <button type="button" id="submit" onclick="submit()">Submit</button>
+                    <button type="reset" id="reset" onclick="reset()">Reset</button>
+                </form>
+            </div>
+        </section>
     </div>
+
+    <script>
+        w3.includeHTML();
+    </script>
 </body>
 </html>
