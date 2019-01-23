@@ -76,3 +76,10 @@ li {
 .active {
     background-color: #4CAF50;
 }
+
+.nonactive {
+    color:white;
+    border-left:solid;
+    border-color:darkgray;
+    padding-left: 10px;
+}
