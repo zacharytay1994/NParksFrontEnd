@@ -6,7 +6,7 @@
     <title>NPBSingapore</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Stint+Ultra+Expanded" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/catalogue.css">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 <body>
@@ -14,12 +14,62 @@
         <header>
             <div w3-include-html="header.html"></div>
         </header>
-
         <main>
-            <p>here is catalogue</p>
+            <section>
+                <marquee class="catalogue">
+                    <div class="flexcontainer">
+                        <div class="imagedisplay" onclick="on1()" style="background:url(../images/aquaticginger.jpg); background-size:cover;">
+                            <p class="captiontext">Aquatic Ginger</p>
+                        </div>
+                        <div class="imagedisplay" onclick="on2()" style="background:url(../images/lipstickplant.jpg); background-size:cover;">
+                            <p class="captiontext">Lipstick Plant</p>
+                        </div>
+                        <div class="imagedisplay" style="background:url(../images/malayanixora.jpg); background-size:cover;">
+                            <p class="captiontext">Malayan Isora</p>
+                        </div>
+                        <div class="imagedisplay" style="background:url(../images/commondianella.jpg); background-size:cover;">
+                            <p class="captiontext">Common Dianella</p>
+                        </div>
+                        <div class="imagedisplay" style="background:url(../images/pandan.jpg); background-size:cover;">
+                            <p class="captiontext">Pandan</p>
+                        </div>
+                        <div class="imagedisplay" style="background:url(../images/rivertarenna.jpg); background-size:cover;">
+                            <p class="captiontext">River Tarenna</p>
+                        </div>
+                    </div>
+                </marquee>
+                <div id="overlay" style="text-align:center">
+                    <div style="background-color:rgba(195, 170, 170, 0.7); margin: 5%; padding: 10px;">
+                        <h1 id="sciname"></h1>
+                        <p id="sciexplanation" style="color:black"></p>
+                        <h2>Spotted One? Let us know where!</h2>
+                        <form>
+                            <label>First name: <input type="text" name="first_name" required/></label>
+                            <label>Last name: <input type="text" name="last_name" required/></label>
+                            <br />
+                            <br />
+                            <label>Location: <select required>
+                                <option value="1">Yishun</option>
+                                <option value="2">Clementi</option>
+                                </select>
+                            </label>
+                            <br />
+                            <br />
+                            <label>Time: <input type="time" required/></label>
+                            <h2>Get in contact in us, we appreciate it!</h2>
+                            <label>Email: <input type="email" /></label>
+                            <br />
+                            <br />
+                            <label>Phone: <input type="tel" /></label>
+                            <br />
+                            <br />
+                            <button>Submit</button>
+                            <input type="button" onclick="off()" value="Cancel">
+                        </form>
+                    </div>
+                </div>
+            </section>
         </main>
-        <aside></aside>
-
         <footer>
             <div w3-include-html="footer.html"></div>
         </footer>
@@ -28,5 +78,7 @@
     <script>
         w3.includeHTML();
     </script>
+
+    <script type="text/javascript" src="js/zacsScripts.js"></script>
 </body>
 </html>

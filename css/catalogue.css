@@ -1,0 +1,60 @@
+﻿body
+{
+    background-color:black;
+}
+
+.catalogue {
+    background: url(../images/fallingleavesgif.gif);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 400px;
+}
+
+.flexcontainer {
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+}
+
+.imagedisplay {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    margin: 30px;
+    border:solid;
+    border-width: 3px;
+    border-color:saddlebrown;
+    text-align:center;
+}
+
+.captiontext {
+    color:black;
+    font-family:Georgia;
+    font-weight:bold;
+    background-color:lightgray;
+    opacity: 0.5;
+}
+
+#overlay {
+    position: fixed; 
+    display: none; 
+    width: 100%;
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#sciname {
+    color: darkgoldenrod;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-decoration-line:underline;
+}
+
+label {
+    padding: 30px;
+}
