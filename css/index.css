@@ -8,9 +8,12 @@
     justify-content: center;
     background-color: #1e2600;
     background-image: url("https://www.transparenttextures.com/patterns/xv.png");
-    border:solid;
-    border-width:3px;
-    border-color:black;
+    border: solid;
+    border-width: 3px;
+    border-color: black;
+    animation-name: section1;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
 }
 
 .boxone {
@@ -26,8 +29,8 @@ section {
 }
 
 p {
-    color:white;
-    text-align:center;
+    color: white;
+    text-align: center;
     padding: 20px;
 }
 
@@ -44,13 +47,17 @@ p {
     border: solid;
     border-width: 3px;
     border-color: black;
+    animation-name: section2;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
 }
 
 .titles {
-    margin-left:10px;
-    border-left-width:10px;
-    border-bottom:solid;
-    border-bottom-width:1px;
+    margin-left: 10px;
+    border-left-width: 10px;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .gif {
@@ -72,15 +79,19 @@ table {
 
 th {
     border:solid;
-    border-color:lightgray;
+    border-color:darkgray;
     border-width:3px;
     width:50%;
+    background-color:saddlebrown;
+    opacity: 0.5;
 }
 
 td {
     border: solid;
-    border-color:lightgray;
+    border-color:darkgray;
     border-width:3px;
+    background-color:darkgreen;
+    opacity: 0.5;
 }
 
 .phrase {
@@ -93,4 +104,58 @@ td {
     padding-top: 10px;
     text-shadow: -1px -1px 0 darkgray, 1px -1px 0 darkgray, -1px 1px 0 darkgray, 1px 1px 0 darkgray;
     color:floralwhite;
+    margin-top:10px;
+}
+
+.titleloc {
+    font-size:150%;
+    font-family:Georgia;
+    color:black;
+}
+
+.titleinformation {
+    font-family: Georgia;
+}
+
+@keyframes section2 {
+    0% {
+        background-color: #1e2600;
+    }
+
+    25% {
+        background-color: #5c2500;
+    }
+    50% {
+        background-color: #1a0700;
+    }
+
+    75% {
+        background-color: #196300;
+    }
+
+    100% {
+        background-color: #1e2600;
+    }
+}
+
+@keyframes section1 {
+    0% {
+        background-color: #196300;
+    }
+
+    25% {
+        background-color: #1e2600;
+    }
+
+    50% {
+        background-color: #5c2500;
+    }
+
+    75% {
+        background-color: #1a0700;
+    }
+
+    100% {
+        background-color: #196300;
+    }
 }
