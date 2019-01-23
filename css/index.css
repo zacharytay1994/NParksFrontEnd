@@ -34,7 +34,7 @@ p {
 .imgc {
     width: 100%;
     border:inset;
-    border-color:mediumpurple;
+    border-color:darkmagenta;
     border-width:10px;
 }
 
@@ -81,4 +81,16 @@ td {
     border: solid;
     border-color:lightgray;
     border-width:3px;
+}
+
+.phrase {
+    color:white;
+    font-size: 200%;
+    font-family: 'Freestyle Script';
+}
+
+.capimg {
+    padding-top: 10px;
+    text-shadow: -1px -1px 0 darkgray, 1px -1px 0 darkgray, -1px 1px 0 darkgray, 1px 1px 0 darkgray;
+    color:floralwhite;
 }
