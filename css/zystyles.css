@@ -119,6 +119,10 @@ img.dairyfarm{
     margin-right:auto;
 }
 
-label{
+label {
+    color: white;
+}
+
+.park{
     color:white;
 }

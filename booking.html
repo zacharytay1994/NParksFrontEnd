@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="js/booking.js"></script>
     <title>Book a tour!</title>
 </head>
 <body>
@@ -22,12 +23,91 @@
     <div class="sectionbody">
         <section>
             <h2>Book a tour with us!</h2>
-            <div class="sectionbody">
-                <form id="bookingForm" class="booking">
-                    <label class="align_label">Choose a tour: </label>
-                    <input type="radio" class="radio" value="Sungei Buloh" />
-                    <input type="radio" class="radio" value="Dairy Farm" />
+            <div class="w3-center">
+                <form>
+                    <label class="align_label">Name: </label>
+                    <input id="name" type="text" placeholder="Enter your name" onchange="displayDetails()" /> <br /> <br />
+
+                    <label class="align_label">Mobile no.: </label>
+                    <input id="phone" type="text" placeholder="Enter phone number: " onchange="displayDetails()"/> <br /> <br />
+
+                    <label class="align_label">Mobile no.: </label>
+                    <input id="email" type="text" placeholder="Enter your email: " onchange="displayDetails()" /> <br /><br />
+
+                    <label class="align_label">Select date: </label>
+                    <select id="date" name="dates" onchange="displayDetails()">   
+                        <option value="monday">Monday</option>
+                        <option value="tuesday">Tuesday</option>
+                        <option value="wednesday">Wednesday</option>
+                        <option value="thursday">Tuesday</option>
+                        <option value="friday">Friday</option>
+                    </select> <br />
+
+                    <label class="align_label">Select a time: </label>
+                    <select id="time" name="time" onchange="displayDetails()">
+                        <option value="1PM">1PM</option>
+                        <option value="2PM">2PM</option>
+                        <option value="3PM">3PM</option>
+                        <option value="4PM">4PM</option>
+                        <option value="5PM">5PM</option>
+                    </select>
+
+                    <p>Select a park:</p>
+                    <p class="park">Sungei Buloh</p>
+                    <input id="park" class="parkbutton" type="radio" name="park" value="sungei" onchange="displayDetails()"> <br>
+                    <p class="park">Dairy Farm</p>
+                    <input id="park" class="parkbutton" type="radio" name="park" value="dairy" onchange="displayDetails()"> <br>
+
+                    <label class="align_label">Select a tour guide: </label>
+                    <select class="instructors" id="instructors" name="instructors" onchange="displayDetails()">
+                        <option value="tonald">Tonald Drump</option>
+                        <option value="lee">Lee Kok Yuan</option>
+                        <option value="fitri">Muhammed Fitri</option>
+                        <option value="kumar">Suriakumaran</option>
+                    </select> <br /><br />
+
+                    <p class="bluecolor">Your details:</p>
+                    <p class="bluecolor">Name: </p> <p id="inputname"></p><br />
+                    <p class="bluecolor">Email: </p> <p id="inputemail"></p> <br?>
+                    <p class="bluecolor">Phone: </p> <p id="inputphone"></p> <br />
+                    <p class="bluecolor">Park: </p> <p id="inputpark"></p>
+                    <p class="bluecolor">Selected day: </p> <p id="inputdate"></p> <br />
+                    <p class="bluecolor">Selected time: </p><p id="inputtime"></p> <br />
+                    <p class="bluecolor">Tour guide: </p><p id="inputguide"></p><br />
+
+                   <button name="submit" type="submit" onclick="submit()">Submit</button>
+                   <input name="reset" type="reset" value="Reset" />
+                   
                 </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </div>
         </section>
     </div>
